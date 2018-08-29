@@ -12,24 +12,17 @@ import java.util.Scanner;
 public class Main {
     public  static void main(String[] args){
         Scanner lectura = new Scanner(System.in);
-        int numero = lectura.nextInt();
-        
-        
-        
         Cuenta cuenta1 = new Cuenta(1012,1234,"Magdalena Sanchez",0); //asignarle valores 3el constructor
-        System.out.println("Numero: " + cuenta1.getNumero());
-        System.out.println("Clave: " + cuenta1.getClave());
-        System.out.println("Dueno: " + cuenta1.getDueno());
-        System.out.println("Saldo: " + cuenta1.getSaldo());
-        System.out.println("Global: "+ Cuenta.global);
-        cuenta1.consignar(100000);
-        System.out.println("su nuevo saldo es:" + cuenta1.getSaldo());
+        cuenta1.consignar(10000);
+        Cuenta cuenta2 = new Cuenta(1013,9876,"Joselito Perez",500000);
+        System.out.println("digite su nueva clave: " + cuenta2.getDueno());
+        int clave2= lectura.nextInt();
+        cuenta2.cambiarClave(clave2);
+        System.out.println("su nueva clave es: " +  cuenta2.getClave());
+//System.out.println("Global: "+ Cuenta.global);
+        System.out.println( cuenta2.getDueno()+ "Tu saldo es:" + cuenta2.getSaldo() );
         
-        
-        Cuenta cuenta2 = new Cuenta()
-       //
-        System.out.println("Clave" + cuenta1.getClave());
-        // System.out.println(Math.round(50));
+// System.out.println(Math.round(50));
     }
     
 }

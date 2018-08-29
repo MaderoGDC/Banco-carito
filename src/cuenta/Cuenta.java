@@ -17,6 +17,7 @@ public class Cuenta {
     private double saldo;
     
     public static int global;
+    
 //Constructor  
 public Cuenta (int numero, int clave, String dueno, double saldo){
   this. numero = numero;
