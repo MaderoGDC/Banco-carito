@@ -84,8 +84,7 @@ public Cuenta (int numero, int clave, String dueno, double saldo){
     }
     
     }
-
-    
+     
 
     
 
